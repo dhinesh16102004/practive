@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dhinesh’s 60-Day Placement Challenge</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--c:#fff;--bd:#ebebeb;--t1:#171717;--t2:#4d4d4d;--t3:#666;--inv:#171717;--invt:#fff;--ok:#297a3a;--sh:0 0 0 1px rgba(0,0,0,.08),0 0 0 2px #fafafa;--sans:'Geist',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0a0a;--c:#111;--bd:#2a2a2a;--t1:#ededed;--t2:#a1a1a1;--t3:#8f8f8f;--inv:#ededed;--invt:#0a0a0a;--ok:#3fa65a;--sh:0 0 0 1px rgba(255,255,255,.12),0 0 0 2px #0a0a0a}}
+:root[data-theme=dark]{--bg:#0a0a0a;--c:#111;--bd:#2a2a2a;--t1:#ededed;--t2:#a1a1a1;--t3:#8f8f8f;--inv:#ededed;--invt:#0a0a0a;--ok:#3fa65a;--sh:0 0 0 1px rgba(255,255,255,.12),0 0 0 2px #0a0a0a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t1);font:400 14px/1.5 var(--sans)}
+h1{font:450 30px/1.1 var(--sans);letter-spacing:-1.5px;margin:4px 0 16px}h2{font:450 18px/1.2 var(--sans);letter-spacing:-.5px;margin:24px 0 12px}
+.app{display:grid;grid-template-columns:232px 1fr;max-width:1280px;margin:auto;min-height:100vh}
+.side{padding:24px 16px;position:sticky;top:0;align-self:start}.logo{font-weight:500;margin-bottom:24px}
+.side button{display:block;width:100%;text-align:left;background:none;border:0;border-radius:6px;padding:8px 12px;color:var(--t2);font:400 14px var(--sans);cursor:pointer}
+.side button.on{background:var(--inv);color:var(--invt)}main{padding:24px 24px 96px;min-width:0}
+.eb,.m{font-family:var(--mono);font-size:11px;letter-spacing:.071em;text-transform:uppercase;color:var(--t1)}.m{color:var(--t3)}
+.card{background:var(--c);border-radius:6px;box-shadow:var(--sh);padding:16px;margin-bottom:12px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.g .card{margin:0}
+.big{font:450 30px/1.1 var(--sans);letter-spacing:-1.5px;margin-top:8px}
+.bar{height:6px;background:var(--bd);border-radius:6px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--inv)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:space-between}.hd{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px}
+button,select,input,textarea{font:400 14px var(--sans);color:var(--t1)}
+.b1,.b2{border-radius:6px;padding:8px 12px;cursor:pointer;border:0}.b1{background:var(--inv);color:var(--invt)}.b2{background:transparent;box-shadow:0 0 0 1px var(--bd);color:var(--t2)}button:disabled{opacity:.4}
+input[type=text],input[type=number],input[type=date],select,textarea{background:var(--c);border:0;box-shadow:0 0 0 1px var(--bd);border-radius:6px;padding:8px;width:100%}
+textarea{min-height:64px;resize:vertical}input[type=checkbox]{accent-color:var(--inv);width:16px;height:16px;margin-top:3px}
+.task .ck{display:flex;gap:12px;cursor:pointer}.t2{color:var(--t2)}.st{font:500 11px var(--mono);text-transform:uppercase;color:var(--t3)}.st.ok,.ok{color:var(--ok)}
+.task>.row{margin-top:8px}.task .nt{flex:1;min-width:140px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.chips button{border-radius:6px;padding:6px 10px;border:0;cursor:pointer;background:var(--c);box-shadow:0 0 0 1px var(--bd);color:var(--t2)}.chips .on{background:var(--inv);color:var(--invt)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.cal .h{font:11px var(--mono);color:var(--t3);text-align:center}
+.cal button,.cal div.e{min-height:56px;border-radius:6px;border:0;background:var(--c);box-shadow:0 0 0 1px var(--bd);color:var(--t3);cursor:pointer;padding:4px}.cal div.e{background:none;box-shadow:none}
+.cal .p{box-shadow:0 0 0 1px var(--inv);color:var(--t1)}.cal .f{background:var(--ok);color:#fff;box-shadow:none}.cal .t{outline:2px solid var(--inv);outline-offset:2px}
+details.card summary{cursor:pointer;font-weight:500}.lnk{background:none;border:0;padding:0;cursor:pointer;color:var(--t1);text-decoration:underline;text-align:left}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}.tbl td,.tbl th{padding:6px;text-align:left;border-bottom:1px solid var(--bd);vertical-align:middle}.tbl input[type=number]{width:70px}.tbl input[type=text]{min-width:120px}.sc{overflow-x:auto}
+@media(max-width:800px){.app{grid-template-columns:1fr}.side{position:static;display:flex;gap:4px;overflow-x:auto;padding:12px}.side .logo{display:none}.side button{white-space:nowrap;width:auto}main{padding:16px 16px 64px}}
+</style></head><body><div class="app"><nav class="side" id="nav"></nav><main id="main"></main></div>
+<script>
+const SUB=['Java','SQL','HTML','CSS','JavaScript','Backend','AI/ML','Aptitude','Communication'],M=[180,60,30,30,30,60,60,60,30];
+const D=`Introduction, JDK, JRE, JVM, first program~Database, table, row, column~HTML structure|CSS introduction|JS introduction~Git and GitHub basics~What is AI?~Number system
+Variables, data types, operators~CREATE, USE, CREATE TABLE~Headings, paragraphs|Selectors|Variables~Client-server basics~Types of AI~Simplification
+Input, output, Scanner~INSERT, SELECT~Links, images|Colors|Console output~HTTP and HTTPS~AI applications~HCF and LCM
+if, else, nested if~WHERE, AND, OR, NOT~Lists|Backgrounds|JS operators~Request and response~AI vs ML~Percentages
+for, while, do-while loops~ORDER BY, DISTINCT~Tables|Box model|JS conditions~Web application structure~ML introduction~Ratio and proportion
+Methods, parameters, return values~UPDATE, DELETE~Forms|Margins|JS loops~Introduction to REST APIs~Supervised learning~Averages
+Revise Days 1–6: Introduction, JDK, JRE, JVM, first program; variables, data types, operators; input, output, Scanner; if, else, nested if; for, while, do-while loops; methods, parameters, return values. Then solve 10 basic programs~Revise Days 1–6: database, table, row, column; CREATE, USE, CREATE TABLE; INSERT, SELECT; WHERE, AND, OR, NOT; ORDER BY, DISTINCT; UPDATE, DELETE. Then write 15 queries~Revise HTML (structure, headings, paragraphs, links, images, lists, tables, forms)|Revise CSS (introduction, selectors, colors, backgrounds, box model, margins)|Revise JavaScript (introduction, variables, console output, operators, conditions, loops); then rebuild a simple webpage~Revise Days 1–6: Git and GitHub basics; client-server basics; HTTP and HTTPS; request and response; web application structure; introduction to REST APIs~Revise Days 1–6: what is AI?; types of AI; AI applications; AI vs ML; ML introduction; supervised learning~Revise Days 1–6: number system; simplification; HCF and LCM; percentages; ratio and proportion; averages. Then 30-question test and error review
+Number programs, even/odd, positive/negative~LIKE, IN, BETWEEN~Semantic HTML|Fonts|JS functions~REST API basics~Unsupervised learning~Profit and loss
+Prime number, palindrome number~Aggregate functions~Forms|Flexbox|JS arrays~JSON basics~Reinforcement learning~Simple interest
+Armstrong number, factorial~GROUP BY, HAVING~Form styling|Grid|JS strings~API tools and testing basics~Training vs testing data~Compound interest
+Pattern programs, nested loops~Primary key, foreign key~Tables|Responsive basics|JS objects~MVC architecture concept~Features and labels~Time and work
+Arrays: traversal, sum, max, min~Constraints, DEFAULT, NOT NULL~Lists|Flexbox practice|DOM introduction~Backend vs frontend~Classification~Time, speed and distance
+Second largest, reverse array, duplicates~INNER JOIN~Responsive page|DOM selection~Java backend overview~Regression~Problems on ages
+Revise loops, methods, numbers, arrays~Revise SQL and joins~Create a profile webpage~Explain HTTP, REST and JSON~AI/ML test~30–40 mixed questions
+Strings, charAt, substring, comparison~INNER JOIN practice~HTML revision|Positioning|JS DOM~Java backend setup~Neural networks~Mixtures and allegations
+String palindrome, reverse, character count~LEFT and RIGHT JOIN~CSS positioning|Events~JDBC introduction~Deep learning~Partnership
+String frequency, duplicate characters~Self join, aliases~CSS responsive layouts|Event handling~JDBC connection concept~CNN basics~Permutations
+OOP: classes, objects, constructors~Subqueries~Semantic page|DOM manipulation~JDBC CRUD operations~RNN and LSTM~Combinations
+Encapsulation, inheritance~Correlated subqueries~CSS transitions|JS validation~DAO pattern~NLP basics~Probability
+Polymorphism, abstraction, interfaces~Set operations, NULL handling~Mini webpage with validation~Connect Java to a database conceptually~Generative AI~Data interpretation
+OOP revision and 10 coding questions~20 mixed SQL queries~Build a form-validation webpage~Review JDBC and CRUD~Revise AI/ML/DL~Mixed aptitude mock
+Access modifiers, static, final~UNION, UNION ALL~HTML revision|CSS Grid|JS callbacks~Spring Boot introduction~Transformers concept~Clocks
+Exception handling, try-catch-finally~Indexes and query basics~Forms|Responsive CSS|JS promises~Spring Initializr, project structure~LLMs~Calendars
+Arrays and strings interview problems~Views~Accessibility|CSS media queries|Async JS~Controllers and routes~Prompt engineering~Number series
+Collections: List, ArrayList~Transactions, COMMIT, ROLLBACK~Layout practice|DOM events, fetch~Dependency injection~AI limitations and hallucinations~Coding-decoding
+Set, HashSet, Map, HashMap~Normalization~CSS layouts|JS JSON~Spring Boot REST controllers~Responsible AI~Blood relations
+Comparable, Comparator, generics~SQL interview queries~Mini frontend|API requests~REST endpoints and Postman~AI in software development~Directions
+Core Java mock test~SQL mock test~Build and test a mini webpage~Explain Spring Boot and REST~Revise AI topics~Full aptitude mock and analysis
+Collections coding practice~JOIN interview problems~HTML forms|CSS layout|JS fetch~Spring Boot project setup~AI project lifecycle~Syllogisms
+Strings and array problems~Subqueries and aggregates~HTML/CSS revision|API calls~Controller, service, repository~Data preprocessing~Statement and conclusion
+OOP interview questions~Schema design~Form validation|Async JS~Spring Data JPA~Feature engineering~Logical deductions
+Exception and collections practice~Relationships and foreign keys~Responsive UI|JSON handling~Entity and repository~Model evaluation~Seating arrangement
+Sorting and searching~CRUD query practice~DOM and API integration~GET and POST endpoints~Overfitting and underfitting~Puzzles
+Two coding problems~SQL timed practice~Mini frontend integration~PUT and DELETE endpoints~AI ethics and bias~Data sufficiency
+Revise Core Java and solve a coding test~Create and query a sample database~Review frontend code~Build a basic CRUD API~Revise all AI topics~One timed aptitude mock
+Recursion basics and problems~Database design practice~HTML structure|CSS components|JS fetch~MySQL connection with Spring Boot~AI vs traditional programming~Mixed arithmetic
+Searching algorithms~Joins and grouping~Responsive page|Promises~CRUD API with MySQL~NLP applications~Mixed reasoning
+Sorting algorithms~Subquery challenges~Form validation and API calls~Validation and error handling~Computer vision~Data interpretation
+Time complexity basics~Indexes and optimization basics~JavaScript modules, DOM~Exception handling in APIs~Recommendation systems~Verbal ability
+Coding interview practice~SQL interview test~Build frontend screens~Connect frontend and backend~AI in healthcare and business~Reading comprehension
+Mixed array/string problems~Database interview questions~API integration and debugging~Complete create/read/update/delete workflow~AI project use cases~Grammar and sentence correction
+Java coding mock~SQL mock~Test all frontend screens~Demonstrate the full CRUD workflow~AI revision quiz~Full aptitude test
+Java interview revision: basics and OOP~SQL interview revision~Plan project UI~Finalize project requirements~AI/ML interview basics~Quantitative mock
+Arrays and strings~JOIN and subquery revision~Build project screens~Create database and entities~ML interview questions~Reasoning mock
+Collections and exceptions~Constraints and normalization~Responsive styling and validation~Implement CRUD APIs~DL interview questions~Verbal mock
+Two timed coding problems~Write 15 queries~Integrate frontend APIs~Connect frontend and database~GenAI and LLM interview questions~Weak-topic practice
+Explain Java code aloud~SQL scenario questions~Debug UI issues~Add validation and error handling~Explain one AI project~Company-style aptitude
+Coding assessment~Timed SQL assessment~Finish project polish~GitHub, README and project demo~AI project explanation~Timed mock
+Full Java mock interview~SQL test~Demonstrate your project~Practise backend explanation~AI interview mock~Analyse mock-test mistakes
+Java fundamentals and OOP~SQL interview questions~HTML/CSS interview questions~Spring Boot architecture~AI fundamentals~Quantitative mock
+Arrays and strings~Joins and subqueries~JavaScript interview questions~REST API interview questions~ML fundamentals~Reasoning mock
+Collections and exceptions~Query-writing test~Frontend interview questions~JPA and database integration~DL fundamentals~Verbal mock
+Java coding assessment~Timed SQL test~JavaScript coding practice~Debugging and API testing~AI applications~Mixed aptitude test
+Explain 10 Java programs~Explain 10 SQL queries~Explain your webpage code~Explain your project architecture~Explain AI concepts simply~Revise weak areas
+Technical mock interview~SQL mock interview~Frontend mock interview~Backend mock interview~AI interview practice~Full timed mock
+Revise weak Java topics~Revise weak SQL topics~Review all frontend code~Project demonstration rehearsal~AI revision~Analyse all mock tests
+Revise important Java concepts and coding problems~20 important queries~Revise HTML, CSS and JS~Revise Spring Boot and REST~AI interview revision~Quantitative revision
+Timed coding assessment~Timed SQL assessment~Build a small frontend page~Test project APIs~Explain your AI projects~Reasoning and verbal mock
+Technical mock interview~SQL oral questions~Frontend oral questions~Explain backend and database~AI mock interview~Full aptitude test
+Final coding test and revision~Final SQL revision~Review frontend project~Demonstrate your project~Revise key definitions~Final mock and mistake review`.split('\n');
+const W=[[1,7,'Foundation'],[8,14,'Java Logic and Frontend Basics'],[15,21,'Core Java, SQL Joins and JavaScript'],[22,28,'Advanced Java Basics and Database Skills'],[29,35,'Spring Boot and Backend Development'],[36,42,'Full-Stack Integration and Projects'],[43,49,'Project Completion and Placement Preparation'],[50,56,'Final Interview Preparation'],[57,60,'Placement Readiness']];
+const AP='Number system,Simplification,HCF and LCM,Percentages,Ratio and proportion,Averages,Profit and loss,Simple interest,Compound interest,Time and work,Time, speed and distance,Problems on ages,Mixtures and allegations,Partnership,Permutations,Combinations,Probability,Data interpretation,Clocks,Calendars,Number series,Coding-decoding,Blood relations,Directions,Syllogisms,Statement and conclusion,Logical deductions,Seating arrangement,Puzzles,Data sufficiency,Verbal ability,Reading comprehension,Grammar and sentence correction'.replace('Time, speed','Time; speed').split(',').map(x=>x.replace('; ',', ')).concat(['Mock tests']);
+const JC=['Arrays','Strings','Loops','Number programs','OOP','Collections','Exceptions','Sorting','Searching','Recursion','Interview questions'];
+const NF=['What I learned today','Concepts I did not understand','Coding errors','SQL mistakes','Topics to revise tomorrow','Interview questions to practise'];
+const NAV=[['dash','Dashboard'],['today','Today’s Tasks'],['road','60-Day Roadmap'],['week','Weekly Plan'],['subj','Subject Tracker'],['apt','Aptitude Practice'],['java','Java Coding Practice'],['cal','Calendar'],['notes','Notes and Revision'],['set','Settings']];
+let S={done:{},tn:{},time:{},dn:{},rev:{},apt:{},mocks:[],java:[],start:'2026-10-26',theme:''};
+try{Object.assign(S,JSON.parse(localStorage.getItem('p60')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('p60',JSON.stringify(S))}catch(e){}};
+const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const R9=[0,1,2,3,4,5,6,7,8],pct=(a,b)=>b?Math.round(a/b*100):0,bar=p=>`<div class="bar"><i style="width:${p}%"></i></div>`;
+const base=()=>{const[y,m,d]=S.start.split('-');return new Date(+y,m-1,+d)},dateOf=d=>{const x=base();x.setDate(x.getDate()+d-1);return x};
+const fmt=x=>x.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+const tdy=()=>{const n=new Date();n.setHours(0,0,0,0);return Math.round((n-base())/864e5)+1},cur=()=>Math.min(60,Math.max(1,tdy()));
+function T(d,i){const p=D[d-1].split('~');if(i<2)return p[i];if(i<5){let w=p[2].split('|');if(w.length==1)w=[w[0],w[0],w[0]];if(w.length==2)w=[w[0],w[0],w[1]];return w[i-2]}if(i<8)return p[i-2];return d%7==0?'Explain five technical concepts aloud; practise HR answers':d==60?'Update resume and GitHub, apply for fresher jobs, practise self-introduction':'Speak aloud: explain today’s concepts; practise HR answers'}
+const dd=d=>R9.filter(i=>S.done[d+'-'+i]).length,wk=d=>W.findIndex(w=>d>=w[0]&&d<=w[1]);
+const wp=w=>{let a=0;for(let d=W[w][0];d<=W[w][1];d++)a+=dd(d);return a},wn=w=>(W[w][1]-W[w][0]+1)*9,dur=m=>m>=60?m/60+' h':m+' m';
+const tot=()=>{let a=0;for(let d=1;d<=60;d++)a+=dd(d);return a},hrs=()=>{let m=0;for(const k in S.done)if(S.done[k])m+=M[+k.split('-')[1]];return m/60};
+const sp=i=>{let a=0;for(let d=1;d<=60;d++)if(S.done[d+'-'+i])a++;return a};
+function streak(){let d=Math.min(tdy(),60),n=0;if(d<1)return 0;if(!dd(d))d--;while(d>=1&&dd(d)){n++;d--}return n}
+let tm=null;const el=k=>(S.time[k]||0)+(tm&&tm.k==k?(Date.now()-tm.t)/1000:0),hms=s=>{s=Math.floor(s);return[s/3600|0,s/60%60|0,s%60].map(x=>String(x).padStart(2,'0')).join(':')};
+const actual=()=>Object.keys(S.time).reduce((a,k)=>a+el(k),0)/3600+(tm&&!S.time[tm.k]?(Date.now()-tm.t)/3600000:0);
+let v='dash',day=cur(),si=0,sf='all',cm=0,jf='All';
+const V={
+dash(){const o=pct(tot(),540),c=cur(),n=dd(c),w=wk(c),pend=[];for(let d=c;d<=60&&pend.length<6;d++)R9.forEach(i=>{if(!S.done[d+'-'+i]&&pend.length<6)pend.push([d,i])});
+return `<div class="eb">▲ 60-DAY PLACEMENT CHALLENGE</div><h1>Dhinesh’s 60-Day Placement Challenge</h1>${tdy()<1?`<p class="t2">Day 1 starts ${fmt(base())} (${1-tdy()} day${tdy()<0?'s':''} to go). Change the start date in Settings.</p>`:`<p class="t2">${fmt(new Date())}</p>`}
+<div class="g"><div class="card"><span class="m">Overall</span><div class="big">${o}%</div>${bar(o)}<span class="m">${tot()} / 540 tasks</span></div>
+<div class="card"><span class="m">Current day</span><div class="big">Day ${c} of 60</div><span class="m">${fmt(dateOf(c))}</span></div>
+<div class="card"><span class="m">Today’s tasks</span><div class="big">${n}/9</div>${bar(pct(n,9))}<span class="m">${pct(n,9)}%</span></div>
+<div class="card"><span class="m">${w==8?'Final days':'Week '+(w+1)}</span><div class="big">${pct(wp(w),wn(w))}%</div>${bar(pct(wp(w),wn(w)))}<span class="m">${wp(w)} / ${wn(w)} tasks</span></div>
+<div class="card"><span class="m">Study hours</span><div class="big">${hrs().toFixed(1)} h</div><span class="m">of 540 h planned · ${actual().toFixed(1)} h timed</span></div>
+<div class="card"><span class="m">Streak</span><div class="big">${streak()} day${streak()==1?'':'s'}</div><span class="m">consecutive days studied</span></div></div>
+<h2>Subject-wise progress</h2><div class="card">${SUB.map((s,i)=>`<div class="row"><span>${s}</span><span class="m">${sp(i)}/60 · ${pct(sp(i),60)}%</span></div>${bar(pct(sp(i),60))}`).join('')}</div>
+<h2>Upcoming pending tasks</h2>${pend.length?pend.map(([d,i])=>`<div class="card row"><span><span class="m">Day ${d} · ${SUB[i]}</span><br>${esc(T(d,i))}</span><button class="b2" data-a="open" data-d="${d}">Open</button></div>`).join(''):'<div class="card">No pending tasks. ▲ All done!</div>'}`},
+today(){return dayV(day)},
+road(){return `<h1>60-Day Roadmap</h1>`+Array.from({length:60},(_,x)=>x+1).map(d=>`<div class="card row"><span><span class="m">Day ${d} · ${fmt(dateOf(d))}${d%7==0?' · Sunday revision':''}</span><br>${esc(T(d,0))}</span><span class="row"><span class="m">${dd(d)}/9</span><button class="b2" data-a="open" data-d="${d}">Open</button></span></div>`).join('')},
+week(){return `<h1>Weekly Plan</h1>`+W.map((w,x)=>{const days=[];for(let d=w[0];d<=w[1];d++)days.push(d);const cd=days.filter(d=>dd(d)==9).length;return `<details class="card"><summary>${x==8?'Final Days':'Week '+(x+1)}: Days ${w[0]}–${w[1]} — ${w[2]} <span class="m">· ${pct(wp(x),wn(x))}% · ${cd}/${days.length} days complete · ${wn(x)-wp(x)} pending</span></summary>${bar(pct(wp(x),wn(x)))}${days.map(d=>`<div class="row"><span><span class="m">Day ${d}${d%7==0?' · Sunday':''}</span> ${esc(T(d,0))}; ${esc(T(d,1))}</span><button class="lnk" data-a="open" data-d="${d}">${dd(d)}/9</button></div>`).join('')}</details>`}).join('')},
+subj(){const i=si,rows=[];for(let d=1;d<=60;d++){const c=!!S.done[d+'-'+i];if(sf=='all'||(sf=='done')==c)rows.push([d,c])}const n=sp(i);
+return `<h1>Subject Tracker</h1><div class="chips">${SUB.map((s,x)=>`<button class="${x==i?'on':''}" data-a="sub" data-i="${x}">${s}</button>`).join('')}</div><div class="card"><div class="row"><b>${SUB[i]}</b><span class="m">${n} done · ${60-n} pending · ${pct(n,60)}%</span></div>${bar(pct(n,60))}<span class="m">Planned ${M[i]}/day = ${(M[i]).toFixed?(M[i]*60/60):0} min × 60 days (${(M[i]/60*60).toFixed(0)} h) · completed ${(n*M[i]/60).toFixed(1)} h</span></div>
+<div class="chips">${[['all','All'],['done','Completed'],['pend','Pending']].map(([k,l])=>`<button class="${sf==k?'on':''}" data-a="filt" data-f="${k}">${l}</button>`).join('')}</div>${rows.length?rows.map(([d,c])=>`<div class="card task"><label class="ck"><input type="checkbox" data-c="chk" data-k="${d}-${i}" ${c?'checked':''}><span><span class="m">Day ${d}</span><br>${esc(T(d,i))}</span></label></div>`).join(''):'<div class="card">Nothing here yet.</div>'}`},
+apt(){return `<h1>Aptitude Practice</h1><div class="card sc"><table class="tbl"><tr><th>Topic</th><th>Learned</th><th>Attempted</th><th>Correct</th><th>Accuracy</th><th>Mistakes to revise</th></tr>${AP.map((t,x)=>{const a=S.apt[t]||{};return `<tr><td>${t}</td><td><input type="checkbox" data-c="apl" data-t="${x}" ${a.l?'checked':''}></td><td><input type="number" min="0" data-i="ap" data-t="${x}" data-f="a" value="${a.a||''}"></td><td><input type="number" min="0" data-i="ap" data-t="${x}" data-f="c" value="${a.c||''}"></td><td data-acc="${x}">${a.a?Math.round((a.c||0)/a.a*100)+'%':'—'}</td><td><input type="text" data-i="ap" data-t="${x}" data-f="m" value="${esc(a.m||'')}"></td></tr>`}).join('')}</table></div>
+<h2>Mock-test history</h2><div class="card"><div class="row"><input type="date" id="md" style="flex:1"><input type="text" id="mn" placeholder="Test name" style="flex:2"><input type="number" id="ms" placeholder="Score" style="flex:1"><input type="number" id="mt" placeholder="Out of" style="flex:1"><input type="text" id="mx" placeholder="Notes" style="flex:2"><button class="b1" data-a="addm">Add</button></div></div>${S.mocks.length?S.mocks.map((m,x)=>`<div class="card row"><span><span class="m">${esc(m.d)}</span> ${esc(m.n)} — ${esc(m.s)}/${esc(m.t)} (${pct(m.s,m.t)}%)<br><span class="t2">${esc(m.x)}</span></span><button class="b2" data-a="delm" data-i="${x}">Delete</button></div>`).join(''):'<div class="card">No mock tests recorded yet.</div>'}`},
+java(){const L=S.java.map((p,x)=>[p,x]).filter(([p])=>jf=='All'||p.c==jf);return `<h1>Java Coding Practice</h1><div class="card"><div class="row"><input type="text" id="jn" placeholder="Problem name" style="flex:2"><select id="jc" style="flex:1">${JC.map(c=>`<option>${c}</option>`).join('')}</select><select id="jd" style="flex:1"><option>Easy</option><option>Medium</option><option>Hard</option></select><input type="number" id="jt" placeholder="Minutes" style="flex:1"></div><div class="row" style="margin-top:8px;justify-content:flex-start"><label><input type="checkbox" id="js"> Solved independently</label><label><input type="checkbox" id="jp"> Passed all test cases</label><input type="text" id="jm" placeholder="Notes about mistakes" style="flex:1;min-width:160px"><button class="b1" data-a="addj">Add</button></div></div>
+<div class="chips">${['All',...JC].map(c=>`<button class="${jf==c?'on':''}" data-a="jf" data-f="${c}">${c}</button>`).join('')}</div>${L.length?L.map(([p,x])=>`<div class="card row"><span><b>${esc(p.n)}</b> <span class="m">${p.c} · ${p.d} · ${p.t||0} min</span><br><span class="t2">${p.s?'✓ Independent':'Needed help'} · ${p.p?'✓ Passed all tests':'Not passing yet'}${p.m?' · '+esc(p.m):''}</span></span><button class="b2" data-a="delj" data-i="${x}">Delete</button></div>`).join(''):'<div class="card">No problems logged yet.</div>'}`},
+cal(){const m=9+cm,f=new Date(2026,m,1).getDay(),n=new Date(2026,m+1,0).getDate();let h=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(x=>`<div class="h">${x}</div>`).join('')+'<div class="e"></div>'.repeat(f);
+for(let i=1;i<=n;i++){const d=Math.round((new Date(2026,m,i)-base())/864e5)+1;if(d<1||d>60){h+=`<div class="e" style="opacity:.4">${i}</div>`;continue}const c=dd(d);h+=`<button class="${c==9?'f':c?'p':''} ${d==tdy()?'t':''}" data-a="open" data-d="${d}"><b>${i}</b><br><span class="m" style="color:inherit">D${d} · ${c}/9</span></button>`}
+return `<h1>Calendar</h1><div class="row" style="margin-bottom:12px"><button class="b2" data-a="cm" data-n="-1" ${cm<1?'disabled':''}>←</button><b>${['October','November','December'][cm]} 2026</b><button class="b2" data-a="cm" data-n="1" ${cm>1?'disabled':''}>→</button></div><div class="cal">${h}</div><p class="m">Filled = complete · Outlined = partial · Plain = none · Ring = today</p>`},
+notes(){const r=Object.keys(S.rev).filter(k=>S.rev[k]).map(k=>k.split('-').map(Number)).sort((a,b)=>a[0]-b[0]||a[1]-b[1]),dn=Object.keys(S.dn).filter(d=>S.dn[d][4]).map(Number).sort((a,b)=>a-b);
+return `<h1>Notes and Revision</h1><h2>Marked for revision</h2>${r.length?r.map(([d,i])=>`<div class="card row"><span><span class="m">Day ${d} · ${SUB[i]}</span><br>${esc(T(d,i))}</span><button class="b2" data-a="open" data-d="${d}">Open</button></div>`).join(''):'<div class="card">Nothing marked yet. Tick “Revise” on any task.</div>'}<h2>Revise-tomorrow notes</h2>${dn.length?dn.map(d=>`<div class="card"><button class="lnk" data-a="open" data-d="${d}">Day ${d}</button><br>${esc(S.dn[d][4])}</div>`).join(''):'<div class="card">No notes yet.</div>'}`},
+set(){return `<h1>Settings</h1><div class="card"><label class="m">Day 1 start date (a Monday matches the Sunday schedule)</label><input type="date" id="sd" data-c="sd" value="${S.start}"></div><div class="card"><button class="b2" data-a="th">Toggle light / dark</button></div><div class="card"><div class="m">Backup / move to another device</div><textarea id="bk">${esc(JSON.stringify(S))}</textarea><button class="b2" data-a="imp" style="margin-top:8px">Import pasted data</button></div><div class="card"><button class="b1" data-a="reset">Reset all progress</button></div>`}};
+function dayV(d){const n=dd(d),N=S.dn[d]||[];return `<div class="hd"><div><div class="eb">DAY ${d} OF 60 · ${fmt(dateOf(d))}${d%7==0?' · SUNDAY REVISION':''}</div><h1>Day ${d}</h1></div><div class="row"><button class="b2" data-a="go" data-d="${d-1}" ${d<2?'disabled':''}>← Prev</button><button class="b2" data-a="go" data-d="${d+1}" ${d>59?'disabled':''}>Next →</button></div></div>
+<div class="card"><div class="row"><b>${n}/9 completed</b><span class="m">${pct(n,9)}%</span></div>${bar(pct(n,9))}${n==9?'<div class="ok"><b>✓ Congratulations! All nine categories completed today.</b></div>':''}</div>
+${R9.map(i=>{const k=d+'-'+i,c=S.done[k],r=tm&&tm.k==k;return `<div class="card task"><div class="row"><label class="ck"><input type="checkbox" data-c="chk" data-k="${k}" ${c?'checked':''}><span><b>${SUB[i]}</b> <span class="m">${dur(M[i])}</span><br><span class="t2">${esc(T(d,i))}</span></span></label><span class="st ${c?'ok':''}">${c?'✓ Completed':'Pending'}</span></div>
+<div class="row"><span class="m" data-tm="${k}">${hms(el(k))}</span><span class="row"><button class="b2" data-a="${r?'tp':'ts'}" data-k="${k}">${r?'Pause':el(k)?'Resume':'Start'}</button><button class="b2" data-a="tr" data-k="${k}">Reset</button></span><input type="text" class="nt" placeholder="Optional notes" data-i="tn" data-k="${k}" value="${esc(S.tn[k]||'')}"><label class="m"><input type="checkbox" data-c="rv" data-k="${k}" ${S.rev[k]?'checked':''}> Revise</label></div></div>`}).join('')}
+<h2>Daily notes</h2>${NF.map((f,x)=>`<div class="card"><label class="m">${f}</label><textarea data-i="dn" data-d="${d}" data-f="${x}">${esc(N[x]||'')}</textarea></div>`).join('')}`}
+function render(){$('#nav').innerHTML='<div class="logo">▲ Placement Challenge</div>'+NAV.map(([k,l])=>`<button class="${k==v?'on':''}" data-a="nav" data-v="${k}">${l}</button>`).join('');$('#main').innerHTML=V[v]()}
+const stop=()=>{if(tm){S.time[tm.k]=el(tm.k);tm=null}};
+const A={nav:b=>{v=b.dataset.v;if(v=='today')day=cur();render();scrollTo(0,0)},open:b=>{day=+b.dataset.d;v='today';render();scrollTo(0,0)},go:b=>{day=+b.dataset.d;render();scrollTo(0,0)},
+ts:b=>{stop();tm={k:b.dataset.k,t:Date.now()};save();render()},tp:()=>{stop();save();render()},tr:b=>{if(tm&&tm.k==b.dataset.k)tm=null;delete S.time[b.dataset.k];save();render()},
+sub:b=>{si=+b.dataset.i;render()},filt:b=>{sf=b.dataset.f;render()},cm:b=>{cm+=+b.dataset.n;render()},jf:b=>{jf=b.dataset.f;render()},
+addm:()=>{const m={d:$('#md').value,n:$('#mn').value,s:$('#ms').value,t:$('#mt').value,x:$('#mx').value};if(!m.n)return;S.mocks.push(m);save();render()},delm:b=>{S.mocks.splice(+b.dataset.i,1);save();render()},
+addj:()=>{const n=$('#jn').value.trim();if(!n)return;S.java.push({n,c:$('#jc').value,d:$('#jd').value,t:$('#jt').value,s:$('#js').checked,p:$('#jp').checked,m:$('#jm').value});save();render()},delj:b=>{S.java.splice(+b.dataset.i,1);save();render()},
+th:()=>{S.theme=(S.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))=='dark'?'light':'dark';document.documentElement.dataset.theme=S.theme;save()},
+imp:()=>{try{const o=JSON.parse($('#bk').value);if(o&&o.done){S=Object.assign(S,o);save();render()}}catch(e){alert('That data could not be read.')}},
+reset:()=>{if(confirm('Reset ALL progress, notes and records? This cannot be undone.')){tm=null;S={done:{},tn:{},time:{},dn:{},rev:{},apt:{},mocks:[],java:[],start:S.start,theme:S.theme};save();render()}}};
+const C={chk:b=>{S.done[b.dataset.k]=b.checked;save();render()},rv:b=>{S.rev[b.dataset.k]=b.checked;save()},apl:b=>{const t=AP[+b.dataset.t];(S.apt[t]=S.apt[t]||{}).l=b.checked;save()},sd:b=>{if(b.value){S.start=b.value;save()}}};
+const I={tn:b=>{S.tn[b.dataset.k]=b.value},dn:b=>{(S.dn[b.dataset.d]=S.dn[b.dataset.d]||[])[+b.dataset.f]=b.value},ap:b=>{const t=AP[+b.dataset.t],a=S.apt[t]=S.apt[t]||{};a[b.dataset.f]=b.value;const c=$('[data-acc="'+b.dataset.t+'"]');if(c)c.textContent=+a.a?Math.round((+a.c||0)/+a.a*100)+'%':'—'}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b)});
+document.addEventListener('change',e=>{const b=e.target.closest('[data-c]');if(b&&C[b.dataset.c])C[b.dataset.c](b)});
+document.addEventListener('input',e=>{const b=e.target.closest('[data-i]');if(b&&I[b.dataset.i]){I[b.dataset.i](b);save()}});
+setInterval(()=>document.querySelectorAll('[data-tm]').forEach(x=>x.textContent=hms(el(x.dataset.tm))),1000);
+if(S.theme)document.documentElement.dataset.theme=S.theme;render();
+</script></body></html>
